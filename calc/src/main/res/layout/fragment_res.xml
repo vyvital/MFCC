@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:transitionName="@string/transition_name"
+    tools:context=".ResFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/fontbw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/here"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tdee"
+        style="@style/fontw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="1234" />
+
+    <TextView
+        android:id="@+id/how"
+        style="@style/fontw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/how"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tdee" />
+
+    <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+        android:id="@+id/size_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:activeBgColor="@color/white"
+        app:activeTextColor="@color/colorPrimary"
+        app:cornerRadius="8dp"
+        app:inactiveBgColor="@color/colorAccent"
+        app:inactiveTextColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how"
+        app:separatorColor="@color/white"
+        app:textToggleCenter="Average    Joe"
+        app:textToggleLeft="Tubby McFatPhuck"
+        app:textToggleRight="String   Bean"
+        app:toggleWidth="110dp" />
+
+    <TextView
+        android:id="@+id/stop1"
+        style="@style/fontw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/how_did_you_get_so"
+        android:textSize="18sp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/stop2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size_switch" />
+
+    <TextView
+        android:id="@+id/stop2"
+        style="@style/fontw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        tools:text="skinny?"
+        android:textSize="18sp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@id/stop3"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@id/stop1"
+        app:layout_constraintTop_toBottomOf="@+id/size_switch" />
+
+    <TextView
+        android:id="@+id/stop3"
+        style="@style/fontw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/wow"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stop2"
+        app:layout_constraintTop_toBottomOf="@+id/size_switch" />
+</android.support.constraint.ConstraintLayout>

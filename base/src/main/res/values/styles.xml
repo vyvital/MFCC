@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.AppCompat.NoActionBar" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="font">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/qanelas</item>
+    </style>
+
+    <style name="fontw">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/qanelas</item>
+    </style>
+
+    <style name="fontb">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/qanelasbold</item>
+    </style>
+
+    <style name="fontbw">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/qanelasbold</item>
+    </style>
+</resources>
